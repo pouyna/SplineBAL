@@ -1,0 +1,14 @@
+# Package versions used to produce the published results.
+# Python 3.13 or newer (verified on 3.13 and 3.14); CPU only, no GPU.
+#
+#   pip install -r requirements.txt
+#
+# readout.py and recompute_stats.py need only numpy/scipy. Everything that imports
+# ispline_model.py needs jax/numpyro: the campaign dispatchers, gp_arms.py,
+# make_figures.py, real_data.py and test_surrogates.py. matplotlib is used by
+# make_figures.py and by real_data.py --out.
+numpy==2.3.3
+scipy==1.16.2
+jax==0.10.1
+numpyro==0.21.0
+matplotlib
