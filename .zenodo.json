@@ -1,0 +1,35 @@
+{
+  "title": "SplineBAL: shape-constrained Bayesian active learning of saturation curves",
+  "upload_type": "software",
+  "description": "<p>SplineBAL fits a saturation curve, a monotone response that rises from zero and levels off, from a handful of expensive, noisy measurements, and chooses where to measure next. The surrogate is a penalized monotone I-spline with non-negative weights, so every posterior draw starts at zero and never decreases, and the input that reaches any saturation level is read from the posterior by level crossing, with no kinetic form assumed.</p><p>This archive holds the Python implementation, the scripts that regenerate every figure, table, and quoted number of the accompanying paper, and a tool that applies the model to a measured curve. The cached results are archived separately as a dataset.</p>",
+  "creators": [
+    {
+      "name": "Navabi, Pouyan",
+      "affiliation": "University of Illinois Chicago"
+    },
+    {
+      "name": "Takoudis, Christos G.",
+      "affiliation": "University of Illinois Chicago"
+    }
+  ],
+  "license": "mit",
+  "access_right": "open",
+  "version": "1.0.1",
+  "keywords": [
+    "saturation curves",
+    "active learning",
+    "Bayesian inference",
+    "monotone regression",
+    "I-splines",
+    "adsorption kinetics",
+    "atomic layer deposition"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "arXiv:2606.26577",
+      "relation": "isSupplementTo",
+      "scheme": "arxiv",
+      "resource_type": "publication-preprint"
+    }
+  ]
+}
